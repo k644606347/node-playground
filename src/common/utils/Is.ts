@@ -37,3 +37,5 @@ export const isEmptyContent = (v: any) => {
 export const hasValue = (v: any) => {
     return v !== undefined && v !== null;
 }
+
+Promise.resolve('123').finally

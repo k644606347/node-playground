@@ -1,8 +1,10 @@
-import { isError } from "./Is";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Is_1 = require("./Is");
 class Tools {
     formatError(err, options = {}) {
         let { beautifyJSON } = options;
-        if (isError(err)) {
+        if (Is_1.isError(err)) {
             return err + '';
         }
         else {
@@ -14,6 +16,6 @@ class Tools {
     }
 }
 const tools = new Tools();
-export default Tools;
-export { tools };
+exports.tools = tools;
+exports.default = Tools;
 //# sourceMappingURL=Tools.js.map
