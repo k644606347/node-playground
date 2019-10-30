@@ -1,0 +1,14 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+      "target": "es2017",
+      "module": "amd",
+      "outFile": "../../dist/client/bundle.js",
+    //   "outDir": "../../dist",
+      "baseUrl": "../",
+      "rootDir": "../"
+    },
+    "include": ["./**/*"],
+    "exclude": []
+  }
+  

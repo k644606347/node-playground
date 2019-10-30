@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "",
+    "build_server": "tsc --build tsconfig.json",
+    "build_client": "tsc --build src/client/tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,13 @@
   "bugs": {
     "url": "https://github.com/k644606347/node-playground/issues"
   },
-  "homepage": "https://github.com/k644606347/node-playground#readme"
+  "homepage": "https://github.com/k644606347/node-playground#readme",
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3"
+  }
 }

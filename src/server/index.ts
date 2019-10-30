@@ -1,4 +1,5 @@
 import express from "express";
+import { isError } from "../common/utils/Is";
 
 let app = express();
 
@@ -12,6 +13,7 @@ function handleIndex(req: express.Request, res: express.Response, next: express.
 }
 
 app.listen(80, '0.0.0.0', () => {
+    isError;
     console.log(
         "App running at http://%s:%d in %s mode",
         app.get('ip'),
